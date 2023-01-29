@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4a7142628e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="landing">
+        <video autoplay muted loop id="myVideo">
+            <source src="//foralltimefilms.com/wp-content/uploads/2022/08/Website-Reel.-2022-1mp4.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <ul class="nav-list nav-list-left">
+                <li class="nav__link"><a href="/" class="nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--white">Home</a></li>
+                <li class="nav__link"><a href="./behind.html" class="nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--white">Behind the Camera</a></li>
+            </ul>
+            <a href="/" class="logo-container">
+                <img src= "./assets/small-light.png" alt="" class="logo">
+            </a>
+            <ul class="nav-list nav-list-right">
+                <li class="nav__link"><a href="./portfolio.html" class="nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--white">Portfolio</a></li>
+                <li class="nav__link"><a href="./contact.html" class="nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--white">Contact</a></li>
+            </ul>
+            <div class="nav-white-background">
+                <div class="logo-container2">
+                    <img src= "./assets/footer-logo.png" alt="" class="logo nav-logo">
+                </div>
+                <button class="btn__menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>  
+            </div> 
+            <div class="menu__backdrop">
+                <ul class="menu__links" >
+                    <li class="menu__list">
+                        <a href="/" class=" " onclick="toggleMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="./behind.html" class="" onclick="toggleMenu()">Behind the Camera</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="./Portfolio.html" onclick="toggleMenu()">Portfolio</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a> 
+    </section>
+    <section id="your-story">
+        <div class="your-story-container">
+            <div class="col-md-7  your-story-content">
+                <h1 class="mb-5">WE MAKE YOUR LOVE STORY LAST FOR ALL TIME</h1>
+                <p class="mullish-para">
+                    Your story starts before your wedding day. So why, then, are most wedding videos focused only on the big day?                            
+                </p>
+                <br>
+                <p class="mullish-para">
+                    There are so many important steps and milestones along the way. Your wedding day is the celebration of the steps you’ve taken so far, and the steps you’re committed to taking together in the future.
+                </p>
+                <br>
+                <p class="mullish-para">
+                    At For All Time Films, we aspire to tell your authentic love story. Which is why we go further than just the wedding day. We want to tell all of your story, so that you can relive it forever.
+                </p>
+                <a href="./contact.html"><button class="mt-4 button-dhover">Book Today</button></a>
+            </div>
+            <div class="col-md-5 ps-3 p50 mcentre">
+                <img src="./assets/wed-1.jpeg" alt="">
+            </div>
+        </div>  
+    </section>
+    <section id="relive" class="pb-4">
+        <div class="container relive-container">
+            <div class="row">
+                <div class="col df pt-5">
+                    <div class="col-md-6 pb-5">
+                        <div class="img-container">
+                            <img class="fourfifthimg" src="./assets/guy.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 relive-content-container pb-5">
+                        <h2 class="mb-4">RELIVE THE FULL JOURNEY</h2>
+                        <div class="video--container">
+                            <iframe id="IFRAME-yt"  class="elementor-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="This is my story | For All Time FIlms" width="640" height="360" src="https://www.youtube.com/embed/baXa6wflSQY?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fforalltimefilms.com&amp;widgetid=1" id="widget2"></iframe>
+                        </div>
+                        <a href="./contact.html"><button class="mt-4 button-dhover">Book Today</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="story-told" class="mdt-5">
+        <div class="container story-told--header--container">
+            <div class="df aic">
+                <div class="separator"></div>
+                <div class="row story-told-content--container">
+                    <h3>Your Love Story Told</h3>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section id="story-told-video-section">
+        <div class="container story-told--container">
+            <div id="1" class="row story-told-play--container" onclick="toggleFullScreen(id)" >
+                <a href="javascript: void(0);" class="video-button-play-inner-portfolio">
+                    <div class="video-button-play-inner video-button-play-inner-portfolio">
+                        <span class="play-outline"></span>
+                        <span class="vb-label">
+                            <span>play</span>
+                            <span>video</span>
+                        </span>
+                        <svg class="svg-circle"><circle cx="50%" cy="50%" r="45%"></circle></svg>
+                        <svg class="svg-circle svg-circle2"><circle cx="50%" cy="50%" r="45%"></circle></svg>
+                    </div>
+                </a>  
+                <div class="yt__backdrop">
+                    <iframe id="FRAME_ID--YT--overlay" src="https://www.youtube.com/embed/eO8w2pIwo0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>  
+            </div>
+            <div class="portfolio-img--container">
+                <img class="" src="./assets/storytoldimg.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="memories">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 memories-content--container">
+                    <h2>Memories that don't fade</h2>
+                    <p class="mullish-para mt-5">Weddings are busy. Especially if it’s your wedding. With so much going on, you need to remind yourself to slow down and savor the moment. </p>
+                    <p class="mullish-para">It will be a day full of memories that you’ll never want to forget. Unfortunately, memories fade. Even the best ones. Which is why we make documentary-style love films centered around your wedding. </p>
+                    <p class="mullish-para">Every detail, every emotion, every moment, captured forever. </p>
+                    <p class="mullish-para">Remind yourself of how good you both looked. Evoke the emotions that the union of your love elicited. </p>
+                    <p class="mullish-para">Relive your special day, forever.</p>
+                    <div class="img-container mb-4">
+                        <img src= "./assets/wed-2.jpeg" alt="">
+                    </div>
+                    <a href="./contact.html"><button class="mt-4 button-dhover">Book Today</button></a>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section id="boundaries">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-9 mcentre">
+                    <h2>LOVE KNOWS NO BOUNDARIES</h2>
+                    <p class="big-para">And neither do we. Whether you’re getting married in your backyard or the other side of the world, we’ll be there. Ask us about filming your wedding in any location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class=" col col-sm-10 mcentre">
+                    <div class="separator"></div>
+                    <h2 class="my-4">Testimonials</h2>
+                    <div class="testimonial-container">
+                        <div class="swiper-controls col-2">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div> 
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="swiper col-sm-11 mt-5 p-4">
+                            <div class="swiper-wrapper">
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">Delivered beyond expectation</div>
+                                    <p class="testiomianl-para">
+                                        Working with Jeremiah- All Time Films was a breeze. 
+                                        Videography was not our priority at first however after seeing his work we knew we needed to have him at our wedding. 
+                                        He was extremely professional, personable, and really took time to get to know us so that our wedding film captured our story. After our experience I now HIGHLY recommend hiring him as a videographer. The style of All Time Films is so different from any other wedding videos we saw because it’s unique to the couple. 
+                                        It tells a story, YOUR story, and that’s what you want from your videographer.
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        Bria + Todd
+                                    </div>
+                                </div>
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">Jeremiah is Amazing!!</div>
+                                    <p class="testiomianl-para">
+                                        He is so compassionate about his couples and really takes the time to get to know each of them! 
+                                        He loves telling the story and capturing the most beautiful moments! 
+                                        He is easy to talk to, great at planning, and overall a great videographer to work with anyone!!
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        6/10/22 Hayley + Andrew
+                                    </div>
+                                </div>
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">Thank God we found Jeremiah! Our video was our greatest investment, and most cherished keepsake.</div>
+                                    <p class="testiomianl-para">
+                                        We LOVE LOVE LOVE OUR VIDEO! Jeremiah has such a way with the camera and his editing style that embraces the emotion of every moment and allows us to relive that day every time we watch the video. 
+                                        We get to watch and remember what each moment felt like that day, but also get to watch our loved ones have an incredible time celebrating us. Our video captured everything that mattered and nothing that didn’t. 
+                                        Everyone we’ve had the chance to show the video to has said that they feel like they are there and are so incredibly impressed with Jeremiah‘s talent the way we are. 
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        Mikaela + Kevin
+                                    </div>
+                                </div>
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">It's Worth the Read, I Promise!</div>
+                                    <p class="testiomianl-para">
+                                        I can not say enough about Jeremiah. I was expecting a wedding video but he calls these wedding films and oh my goodness is that appropriate... 
+                                        Our film is a cinematic masterpiece. Through the stress and nerves of the wedding day it is hard to really breathe it all in, but every time I watch our film I am shocked at just how beautiful it all was, 
+                                        how blissful we looked, and how much fun all our guests were having. His focus is on storytelling and I was a little concerned that our story wasn't dramatic enough to be told. 
+                                        Jeremiah made sure to prove me wrong on that. I also really wanted to incorporate my late father into my day and was hoping he could involve this in our film. He captured all the intricate details I had worked so hard on to honor my father that day. This meant so much. 
+                                        His incorporation of my dad's story into ours not only made my heart happy, but it will make the video that much more special for loved ones to see and for our children to see someday.  
+                                        He is a kind and happy soul whose presence honestly just made the day better in general!
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        Treasure + Dakota
+                                    </div>
+                                </div>
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">Exceeded our expectations</div>
+                                    <p class="testiomianl-para">
+                                        “We are in awe of how beautifully Jeremiah captured our most important day for us. 
+                                        We are absolutely BLOWN away by this video and will watch it until the end of time. 
+                                        His work absolutely exceeded our expectations and was hands-down our best wedding investment. 
+                                        We will be able to go back and watch this in the years to come and relive all of these beautiful moments that were caught so perfectly. 
+                                        Don’t think about it, just book with him.”
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        G + H
+                                    </div>
+                                </div>
+                                <div class="testimonial swiper-slide">
+                                    <div class="h3">The Best Videographer we could've asked for!</div>
+                                    <p class="testiomianl-para">
+                                        “We found Jeremiah through a FB Ad and from our very first interaction with him, we were totally impressed. 
+                                        Jeremiah is friendly, accommodating, and flexible. He has a great attitude and when he showed up on our wedding day he already felt like a friend (even though it was the first time we met him!). 
+                                        Jeremiah is incredibly professional, has a very high work ethic, and even though we didn't live in the same state as him, he went above and beyond to enhance and simplify our videography experience. 
+                                        Our wedding teaser video was done incredibly fast and left us all speechless - 
+                                        we couldn't have imagined our special day being captured more perfectly! 12/10 recommend Jeremiah for ANY videography needs!”
+                                    </p>
+                                    <div class="testiomonial-footer">
+                                        J + M
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="not-sure">
+        <div class="container relive-container">
+            <div class="row">
+                <div class="mcentre col-11">
+                    <h2>NOT SURE ABOUT A WEDDING FILM?</h2>
+                    <div class="por mcentre not-sure-container" >
+                        <div id="2" class="row not-sure-circle-container " onclick="toggleFullScreen(id)">
+                            <a href="javascript: void(0);"  class="video-button-play-inner-portfolio" data-rel="prettyPhoto[video_button_pretty_photo_9]">
+                                <div class="video-button-play-inner video-button-play-inner-portfolio">
+                                    <span class="play-outline"></span>
+                                    <span class="vb-label">
+                                        <span>play</span>
+                                        <span>video</span>
+                                    </span>
+                                    <svg class="svg-circle"><circle cx="50%" cy="50%" r="45%"></circle></svg>
+                                    <svg class="svg-circle svg-circle2"><circle cx="50%" cy="50%" r="45%"></circle></svg>
+                                </div>
+                            </a> 
+                            <div class="yt__backdrop">
+                                <iframe id="FRAME_ID--YT--overlay" src="https://www.youtube.com/embed/7oUkHs1DW00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                        <div class="portfolio-img--container">
+                            <img class="" src="./assets/wed-3.jpg" alt="">
+                        </div> 
+                    </div>     
+                    <a href="./contact.html"><button class="mt-5 button-dhover">Learn More</button></a>               
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section id="flower-background">
+        <div class="df flexend">
+            <img src="./assets/background-16.png" class="corner-img" alt="">
+        </div> 
+    </section>
+    <section id="getintouch">
+        <div class="container relive-container">
+            <div class="row">
+                <div class="mcentre col-11">
+                    <h3>GET IN TOUCH</h3>
+                    <span>Follow our latest stories</span>
+                    <br>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section id="getintouch">
+        <div class="container relive-container">
+            <div class="row">
+                <div class="mcentre col-11">
+                    <h2>FOLLOW US ON INSTAGRAM</h2>
+                    <span>@foralltimes</span>
+                    <br>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section id="getintouch">
+        <div class="mcentre df">
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/reel/CmM4aWLgcF3/" class="insta-reel">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+            </div>
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/reel/CmIFplxAN6O/" class="insta-reel insta-reel2">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+                
+            </div>
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/reel/Cl6VoShMvET/" class="insta-reel insta-reel3">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+                
+            </div>
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/p/Cl14XhoJI4C/" class="insta-reel insta-reel4">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+                
+            </div>
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/reel/CloN98zL0bv/" class="insta-reel insta-reel5">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+                
+            </div>
+            <div class="col-4 col-md-2 px-1">
+                <a href="https://www.instagram.com/reel/ClkIFBZp21P/" class="insta-reel insta-reel6">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container df col-md-10 mcentre">
+            <div class="footer-list col-md-3 pe-1 footer-col">
+                <h3>Follow Us</h3>
+                <div class="df footer-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook small-icon"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram small-icon"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube small-icon"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin small-icon"></i></a>
+                </div>
+            </div>
+            <div class="col-3 footer-col">
+                <div class="footer-logo-container">
+                    <a href="/"><img src= "./assets/footer-logo.png" alt="" class="logo footer-logo"></a>
+                </div>
+            </div>
+            <div class="footer-list col-md-3 ps-4 footer-col">
+                <h3 class="mb-4">Mail Us</h3>
+                <a href="mailto:demoemail@gmail.com">sdws@gmail.com</a>
+            </div>
+        </div>
+        <div class="footnote pt-4">&copy2022  All Time Films All Rights Reserved. | Design by Ajstudios.</div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
